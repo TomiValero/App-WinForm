@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44D458CB-57FB-4438-8C3D-FAB689C9EB11}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CatalogoWinForm</RootNamespace>
+    <AssemblyName>CatalogoWinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AcercaDe.Designer.cs">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaArticulo.Designer.cs">
+      <DependentUpon>AltaArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaCategoria.Designer.cs">
+      <DependentUpon>AltaCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMarca.Designer.cs">
+      <DependentUpon>AltaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleArticulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleArticulo.Designer.cs">
+      <DependentUpon>DetalleArticulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaArticulos.Designer.cs">
+      <DependentUpon>ListaArticulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCategorias.Designer.cs">
+      <DependentUpon>ListaCategorias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaMarcas.Designer.cs">
+      <DependentUpon>ListaMarcas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AcercaDe.resx">
+      <DependentUpon>AcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaArticulo.resx">
+      <DependentUpon>AltaArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaCategoria.resx">
+      <DependentUpon>AltaCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaMarca.resx">
+      <DependentUpon>AltaMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleArticulo.resx">
+      <DependentUpon>DetalleArticulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaArticulos.resx">
+      <DependentUpon>ListaArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCategorias.resx">
+      <DependentUpon>ListaCategorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaMarcas.resx">
+      <DependentUpon>ListaMarcas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\CatalogoWinForm.ListaCategorias.resources" />
+    <EmbeddedResource Include="obj\Debug\CatalogoWinForm.ListaMarcas.resources" />
+    <EmbeddedResource Include="obj\Debug\CatalogoWinForm.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="bin\Debug\CatalogoWinForm.exe.config" />
+    <None Include="obj\Debug\CatalogoWinForm.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\CatalogoWinForm.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\CatalogoWinForm.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CatalogoWinForm.exe" />
+    <Content Include="bin\Debug\CatalogoWinForm.pdb" />
+    <Content Include="obj\Debug\CatalogoWinForm.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CatalogoWinForm.exe" />
+    <Content Include="obj\Debug\CatalogoWinForm.pdb" />
+    <None Include="Resources\Perfill2.png" />
+    <None Include="Resources\Perfil3.png" />
+    <None Include="Resources\Perfil1.png" />
+    <None Include="Resources\github-logo.png" />
+    <None Include="Resources\Linkedin-Icon.png" />
+    <None Include="Resources\archivero.jpg" />
+    <None Include="Resources\bg-img.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{8836971c-d43a-40a5-9cf2-966b9c34f507}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{f1422c6d-2215-4981-9fb6-6131edae784a}</Project>
+      <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{63bbc98a-9fa9-40b2-a999-752453fc0280}</Project>
+      <Name>negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
