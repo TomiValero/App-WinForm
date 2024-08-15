@@ -7,6 +7,10 @@
 <body>
     <h1>Desarrollo de Aplicación de Escritorio para la Gestión de Catálogo de Artículos</h1>
 
+![WinformProy](https://github.com/user-attachments/assets/45441a47-3977-40b4-82ef-f0b3f9615255)
+
+
+
   <h2>Descripción del Proyecto</h2>
   <p>Desarrollamos en equipo una aplicación de escritorio utilizando C#, .NET Framework, ADO.NET y WinForms para la gestión de artículos de un catálogo de comercio. La aplicación está diseñada para ser genérica y aplicable a cualquier tipo de comercio. La información cargada en la aplicación será consumida desde distintos servicios para ser mostrada en webs, e-commerces, apps móviles, revistas, etc. Este uso es parte del contexto en el cual se utilizará la aplicación.</p>
 
